@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <form>
+            <input type="text" placeholder='Location' name='address'>
+            <button type='submit'>Get forecast</button>
+        </form>
+
+        <div>
+            <span id="cityData"></span>
+            <br/>
+            <span id="forecastData"></span>
+        </div>
+    </div>
+
+    {{>footer}}
+
+     <script src="/js/app.js"></script>
+</body>
+
+</html>
